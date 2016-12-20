@@ -1,0 +1,49 @@
+<head>
+  <!--  -->
+  <title>hi</title>
+</head>
+
+<body>
+  <h1>Coin Distributor</h1>
+  <!-- These are meteor's little template things -->
+  {{> login}}
+  {{> info}}
+  {{> logout}}
+</body>
+
+<!-- Just a login button -->
+<template name="login">
+  <div id="login-button">
+    <button>Login</button>
+  </div>
+</template>
+
+<!-- This is step 2, where we logged in and
+have the ability to click and earn a coin. -->
+<template name="info">
+  <div id="coin-button">
+    <button>Click to earn a coin</button>
+    <div id="show-counter"> <!-- These values are hidden until click -->
+        <p>You own {{counter}} ec.</p>
+        <p>You made {{commits}} commits.</p>
+    </div>
+  </div>
+</template>
+
+<!-- This is all the logout stuff. -->
+<!--  -->
+<template name="logout">
+  <h2></h2>
+  <div id="logout-button">
+    <button>Logout</button>
+    <div id="secret-Image">
+      <img src="coin.png">
+    </div>
+  </div>
+  <!--<ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>-->
+</template>

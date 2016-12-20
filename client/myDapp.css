@@ -1,0 +1,10 @@
+/* CSS declarations go here */
+
+#secret-Image {display: none;}
+#logout-button {display: none;}
+#coin-button {display: none;}
+#show-counter {display: none;}
+
+
+/* setting the display to none is how we make
+objects invisible from the initial loading of the app.*/
